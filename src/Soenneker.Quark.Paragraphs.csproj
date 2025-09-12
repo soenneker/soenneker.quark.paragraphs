@@ -39,12 +39,8 @@
         <None Include="..\LICENSE" Pack="true" PackagePath="\" />
         <None Include="..\icon.png" Pack="true" PackagePath="\" />
     </ItemGroup>
-
+    
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.9" />
-    </ItemGroup>
-
-    <ItemGroup>
-        <ProjectReference Include="..\..\soenneker.quark.components\src\Soenneker.Quark.Components.csproj" />
+      <PackageReference Include="Soenneker.Quark.Components" Version="3.0.4" />
     </ItemGroup>
 </Project>
