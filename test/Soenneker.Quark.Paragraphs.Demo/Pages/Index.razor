@@ -1,0 +1,150 @@
+﻿@page "/"
+@using Microsoft.Extensions.Logging
+
+@inject ILogger<Index> Logger
+
+<div class="container">
+    <img src="https://user-images.githubusercontent.com/4441470/224455560-91ed3ee7-f510-4041-a8d2-3fc093025112.png" />
+    <h1>Soenneker.Quark.Paragraphs Demo</h1>
+    <p>This page demonstrates the HTML Paragraph component from Quark.Paragraphs.</p>
+    <br />
+
+    <hr />
+
+    <h2>Basic Paragraph Usage</h2>
+    <p>The Paragraph component provides semantic HTML paragraph elements for content display and typography.</p>
+    
+    <div class="mb-3">
+        <Paragraph>This is a basic paragraph with default styling.</Paragraph>
+    </div>
+
+    <h2>Paragraph with Bootstrap Typography Classes</h2>
+    <div class="mb-3">
+        <Paragraph Class="h1">Heading 1 Style Paragraph</Paragraph>
+        <Paragraph Class="h2">Heading 2 Style Paragraph</Paragraph>
+        <Paragraph Class="h3">Heading 3 Style Paragraph</Paragraph>
+        <Paragraph Class="h4">Heading 4 Style Paragraph</Paragraph>
+        <Paragraph Class="h5">Heading 5 Style Paragraph</Paragraph>
+        <Paragraph Class="h6">Heading 6 Style Paragraph</Paragraph>
+    </div>
+
+    <h2>Paragraph with Color Classes</h2>
+    <div class="mb-3">
+        <Paragraph Class="text-primary">Primary colored paragraph text</Paragraph>
+        <Paragraph Class="text-secondary">Secondary colored paragraph text</Paragraph>
+        <Paragraph Class="text-success">Success colored paragraph text</Paragraph>
+        <Paragraph Class="text-danger">Danger colored paragraph text</Paragraph>
+        <Paragraph Class="text-warning">Warning colored paragraph text</Paragraph>
+        <Paragraph Class="text-info">Info colored paragraph text</Paragraph>
+        <Paragraph Class="text-light bg-dark p-2">Light text on dark background paragraph</Paragraph>
+        <Paragraph Class="text-dark">Dark colored paragraph text</Paragraph>
+    </div>
+
+    <h2>Paragraph with Font Weight Classes</h2>
+    <div class="mb-3">
+        <Paragraph Class="fw-light">Light font weight paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Paragraph>
+        <Paragraph Class="fw-normal">Normal font weight paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Paragraph>
+        <Paragraph Class="fw-bold">Bold font weight paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Paragraph>
+        <Paragraph Class="fw-bolder">Bolder font weight paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Paragraph>
+    </div>
+
+    <h2>Paragraph with Font Style Classes</h2>
+    <div class="mb-3">
+        <Paragraph Class="fst-normal">Normal font style paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Paragraph>
+        <Paragraph Class="fst-italic">Italic font style paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Paragraph>
+        <Paragraph Class="fst-oblique">Oblique font style paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Paragraph>
+    </div>
+
+    <h2>Paragraph with Text Decoration</h2>
+    <div class="mb-3">
+        <Paragraph Class="text-decoration-none">No text decoration paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Paragraph>
+        <Paragraph Class="text-decoration-underline">Underlined paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Paragraph>
+        <Paragraph Class="text-decoration-line-through">Strikethrough paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Paragraph>
+    </div>
+
+    <h2>Paragraph with Text Alignment</h2>
+    <div class="mb-3">
+        <Paragraph Class="text-start">Left aligned paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Paragraph>
+        <Paragraph Class="text-center">Center aligned paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Paragraph>
+        <Paragraph Class="text-end">Right aligned paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Paragraph>
+        <Paragraph Class="text-justify">Justified paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Paragraph>
+    </div>
+
+    <h2>Paragraph with Background Colors</h2>
+    <div class="mb-3">
+        <Paragraph Class="bg-primary text-white p-3">Primary background paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Paragraph>
+        <Paragraph Class="bg-secondary text-white p-3">Secondary background paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Paragraph>
+        <Paragraph Class="bg-success text-white p-3">Success background paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Paragraph>
+        <Paragraph Class="bg-danger text-white p-3">Danger background paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Paragraph>
+        <Paragraph Class="bg-warning text-dark p-3">Warning background paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Paragraph>
+        <Paragraph Class="bg-info text-white p-3">Info background paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Paragraph>
+    </div>
+
+    <h2>Paragraph with Spacing</h2>
+    <div class="mb-3">
+        <Paragraph Class="m-1 p-1 bg-light">Margin and padding 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Paragraph>
+        <Paragraph Class="m-2 p-2 bg-light">Margin and padding 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Paragraph>
+        <Paragraph Class="m-3 p-3 bg-light">Margin and padding 3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Paragraph>
+        <Paragraph Class="m-4 p-4 bg-light">Margin and padding 4 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Paragraph>
+    </div>
+
+    <h2>Paragraph with Bootstrap Display Classes</h2>
+    <div class="mb-3">
+        <Paragraph Class="d-inline bg-primary text-white p-2">Inline paragraph</Paragraph>
+        <Paragraph Class="d-inline bg-secondary text-white p-2">Another inline paragraph</Paragraph>
+        <Paragraph Class="d-block bg-success text-white p-2">Block paragraph</Paragraph>
+        <Paragraph Class="d-inline-block bg-warning text-dark p-2">Inline-block paragraph</Paragraph>
+    </div>
+
+    <h2>Paragraph with Responsive Classes</h2>
+    <div class="mb-3">
+        <Paragraph Class="text-sm-start text-md-center text-lg-end">Responsive text alignment - changes based on screen size</Paragraph>
+        <Paragraph Class="d-none d-md-block">This paragraph is hidden on small screens and visible on medium+ screens</Paragraph>
+        <Paragraph Class="d-block d-md-none">This paragraph is visible on small screens and hidden on medium+ screens</Paragraph>
+    </div>
+
+    <h2>Paragraph Properties</h2>
+    <div class="bg-light p-3 mb-3">
+        <h3>Paragraph Features</h3>
+        <p>The Paragraph component inherits all properties from the Element base class:</p>
+        <ul>
+            <li><strong>Id:</strong> HTML id attribute</li>
+            <li><strong>Class:</strong> CSS classes (Bootstrap utility classes supported)</li>
+            <li><strong>Style:</strong> Inline CSS styles</li>
+            <li><strong>Title:</strong> Tooltip text</li>
+            <li><strong>Hidden:</strong> Visibility control</li>
+            <li><strong>Display:</strong> CSS display property</li>
+            <li><strong>Margin/Padding:</strong> Spacing utilities</li>
+            <li><strong>Event Handlers:</strong> Click, focus, keyboard events</li>
+        </ul>
+    </div>
+
+    <h2>Interactive Paragraph Example</h2>
+    <div class="mb-3">
+        <Paragraph Class="text-primary" style="cursor: pointer;" title="Clickable paragraph">
+            This paragraph has a pointer cursor and tooltip - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </Paragraph>
+    </div>
+
+    <h2>Paragraph with Custom Styling</h2>
+    <div class="mb-3">
+        <Paragraph Class="custom-paragraph" style="font-family: 'Courier New', monospace; font-size: 1.1em; color: #6f42c1; line-height: 1.6;">
+            Custom styled paragraph with inline styles - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </Paragraph>
+    </div>
+
+    <h2>Multiple Paragraphs with Different Styling</h2>
+    <div class="mb-3">
+        <Paragraph Class="lead">This is a lead paragraph with larger, lighter text - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Paragraph>
+        <Paragraph Class="small">This is a small paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Paragraph>
+        <Paragraph Class="text-muted">This is a muted paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Paragraph>
+        <Paragraph Class="mark">This paragraph has highlighted text - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Paragraph>
+    </div>
+</div>
+
+@code{
+    protected override void OnInitialized()
+    {
+        Logger.LogInformation("Paragraph demo page initialized");
+    }
+}
